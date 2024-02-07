@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block title %} Article {% endblock %} {% block
+content %}
+<div class="container mt-5">
+  <!-- <h1 class="text-center display-4">The Gemini News</h1> -->
+  <div class="jumbotron">
+    <h1 class="display-4">{{ article["headline"] }}</h1>
+    <hr class="my-4" />
+    <p class="lead">{{ article["summary"] }}</p>
+    <p>{{ article["article"] }}</p>
+  </div>
+</div>
+{% endblock %}
